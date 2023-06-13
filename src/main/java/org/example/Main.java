@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Result list: " + getIvenNumberedList);
         System.out.println("Min list item: " + getMin(getIvenNumberedList, max));
         System.out.println("Max list item: " + getMax(getIvenNumberedList, min));
-        System.out.println("Mid list item: " + getMid(getIvenNumberedList));
+        System.out.printf("Mid list item: %.2f",getMid(getIvenNumberedList));
     }
     public static LinkedList<Integer> randomList(LinkedList<Integer> list, int min, int max, int size){
 
