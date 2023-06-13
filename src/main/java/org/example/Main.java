@@ -47,12 +47,12 @@ public class Main {
         }
         return max;
     }
-    public static Integer getMid (LinkedList<Integer> list){
+    public static Double getMid (LinkedList<Integer> list){
         int sumItem = 0;
         for (int i = 0; i < list.size(); i++) {
             sumItem += list.get(i);
         }
-        int mid = sumItem / list.size();
+        double mid = sumItem / list.size();
         return mid;
     }
 
