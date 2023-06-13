@@ -48,7 +48,7 @@ public class Main {
         return max;
     }
     public static Double getMid (LinkedList<Integer> list){
-        int sumItem = 0;
+        double sumItem = 0;
         for (int i = 0; i < list.size(); i++) {
             sumItem += list.get(i);
         }
