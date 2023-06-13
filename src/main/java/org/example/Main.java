@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Result list: " + getIvenNumberedList);
         System.out.println("Min list item: " + getMin(getIvenNumberedList, max));
         System.out.println("Max list item: " + getMax(getIvenNumberedList, min));
+        System.out.println("Mid list item: " + getMid(getIvenNumberedList));
     }
     public static LinkedList<Integer> randomList(LinkedList<Integer> list, int min, int max, int size){
 
@@ -46,4 +47,13 @@ public class Main {
         }
         return max;
     }
+    public static Integer getMid (LinkedList<Integer> list){
+        int sumItem = 0;
+        for (int i = 0; i < list.size(); i++) {
+            sumItem += list.get(i);
+        }
+        int mid = sumItem / list.size();
+        return mid;
+    }
+
 }
